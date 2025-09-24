@@ -1,0 +1,107 @@
+.login {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--Login-bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--Login-TextColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 25px var(--Login-ShadowColor);
+    padding: 2rem;
+    text-align: center;
+}
+
+.login-welcome {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--Login-WelcomeColor);
+}
+
+.login-heading {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--Login-TextColor);
+}
+
+.login-input {
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 2px solid var(--LoginInput-BorderColor);
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    background-color: var(--LoginInput-BgColor);
+    color: var(--LoginInput-TextColor);
+    width: 100%;
+    max-width: 250px;
+    box-shadow: inset 0 0 10px var(--LoginInput-ShadowColor);
+    transition: all 0.3s ease;
+}
+
+.login-input:focus {
+    border-color: var(--LoginInputFocus-BorderColor);
+    box-shadow: 0 0 15px var(--LoginInputFocus-ShadowColor),
+        inset 0 0 12px var(--LoginInputFocus-InsetShadowColor);
+}
+
+.login-input:focus::placeholder {
+    color: transparent;
+}
+
+.login-input::placeholder {
+    font-size: 1rem;
+    padding: 0.2rem;
+    letter-spacing: normal;
+}
+
+.login-button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, var(--LoginButton-GradientColor1), var(--LoginButton-GradientColor2));
+    color: var(--LoginButton-TextColor);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 1.5rem;
+    }
+
+    .login-welcome {
+        font-size: 1.5rem;
+    }
+
+    .login-heading {
+        font-size: 1rem;
+    }
+
+    .login-input {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .login-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+    }
+}

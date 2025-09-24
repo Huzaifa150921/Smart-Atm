@@ -1,0 +1,79 @@
+.mainmenucard {
+    background-color: var(--MainMenuCard-BgColor);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px var(--MainMenuCard-ShadowColor);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 200px;
+    height: 180px;
+}
+
+.mainmenucard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--MainMenuCardHover-ShadowColor);
+}
+
+.mainmenucard-icon {
+    font-size: 50px;
+    color: var(--MainMenuCard-IconColor);
+    margin-bottom: 1rem;
+}
+
+.mainmenucard-content {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--MainMenuCard-ContentColor);
+}
+
+@media (max-width: 1024px) {
+    .mainmenucard {
+        width: 180px;
+        height: 160px;
+    }
+
+    .mainmenucard-icon {
+        font-size: 45px;
+    }
+
+    .mainmenucard-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainmenucard {
+        width: 160px;
+        height: 150px;
+    }
+
+    .mainmenucard-icon {
+        font-size: 40px;
+    }
+
+    .mainmenucard-content {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainmenucard {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .mainmenucard-icon {
+        font-size: 36px;
+    }
+
+    .mainmenucard-content {
+        font-size: 0.9rem;
+    }
+}

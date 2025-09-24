@@ -1,0 +1,131 @@
+.pinchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-color: var(--PinChange-BgColor);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--PinChnage-ShadowColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pinchange h2 {
+    font-size: 2rem;
+    color: var(--PinChangeh2-TextColor);
+    margin-bottom: 1.5rem;
+}
+
+.pinchange-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.pinchange-currentpinlabel,
+.pinchange-newpinlabel {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--PinChangelabel-TextColor);
+    margin-bottom: 0.3rem;
+}
+
+.pinchange input {
+    padding: 0.8rem 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--PinChangeInput-borderColor);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.pinchange input:focus {
+    border-color: var(--PinChnageInputFocus-borderColor);
+}
+
+.pinchange-button,
+.pinchange-backbutton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    color: var(--PinChangeButton-TextColor);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.8rem;
+    width: 80%;
+    max-width: 250px;
+}
+
+.pinchange-button {
+    background-color: var(--PinChangeButton-BgColor);
+}
+
+.pinchange-button:hover {
+    background-color: var(--PinChangeButtonHover-BgColor);
+}
+
+.pinchange-backbutton {
+    background-color: var(--PinChangeBackButton-BgColor);
+}
+
+.pinchange-backbutton:hover {
+    background-color: var(--PinChangeBackButtonHover-BgColor);
+}
+
+@media (max-width: 768px) {
+    .pinchange {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .pinchange h2 {
+        font-size: 1.6rem;
+    }
+
+    .pinchange-field {
+        width: 90%;
+    }
+
+    .pinchange input {
+        font-size: 1rem;
+    }
+
+    .pinchange-button,
+    .pinchange-backbutton {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pinchange {
+        padding: 1rem;
+    }
+
+    .pinchange h2 {
+        font-size: 1.4rem;
+    }
+
+    .pinchange-field {
+        width: 100%;
+    }
+
+    .pinchange input {
+        font-size: 0.9rem;
+    }
+
+    .pinchange-button,
+    .pinchange-backbutton {
+        width: 100%;
+    }
+}

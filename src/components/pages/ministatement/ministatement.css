@@ -1,0 +1,149 @@
+.ministatement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 550px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, var(--MiniStatement-Gradient1) 0%, var(--MiniStatement-Gradient2) 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ministatement-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--MiniStatement-heading);
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.ministatement-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ministatement-card {
+    width: 100%;
+    background: var(--MiniStatementCard-BdColor);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--MiniStatementCard-ShadowColor);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ministatement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px var(--MiniStatementCardHover-ShadowColor);
+}
+
+.ministatement-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ministatement-date {
+    font-size: 0.9rem;
+    color: var(--MiniStatementDate-TextColor);
+}
+
+.ministatement-amount {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.ministatement-amount.negative {
+    color: var(--MiniStatementNegtiveAmount-TextColor);
+}
+
+.ministatement-amount.positive {
+    color: var(--MiniStatementPositiveAmount-TextColor);
+}
+
+.ministatement-description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--MiniStatementDescription-TextColor);
+}
+
+.ministatement-empty {
+    font-size: 1rem;
+    color: var(--MiniStatementEmpty-TextColor);
+    text-align: center;
+}
+
+.ministatement-backbutton {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--MiniStatementButton-BgColor);
+    color: var(--MiniStatementButton-TextColor);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ministatement-backbutton:hover {
+    background: var(--MiniStatementButtonHover-BgColor);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .ministatement {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .ministatement-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ministatement-description,
+    .ministatement-empty {
+        font-size: 0.9rem;
+    }
+
+    .ministatement-backbutton {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ministatement {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .ministatement-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .ministatement-card {
+        padding: 0.8rem 1rem;
+    }
+
+    .ministatement-amount {
+        font-size: 0.9rem;
+    }
+
+    .ministatement-backbutton {
+        font-size: 0.85rem;
+        padding: 0.6rem 0.8rem;
+    }
+}

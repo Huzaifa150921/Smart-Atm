@@ -1,0 +1,90 @@
+.balanceinquiry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 250px;
+    background-color: var(--BalanceInquiry-BgColor);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px var(--BalanceInquiry-ShadowColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    color: var(--BalanceInquiry-TextColor);
+}
+
+.balanceinquiry-body {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.balanceinquiry-currentbalance {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--BalanceInquiryCurrentBalance-TextColor);
+}
+
+.balanceinquiry-menubutton {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--BalanceInquiryMenuButton-TextColor);
+    background-color: var(--BalanceInquieryMenuButton-BgColor);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.balanceinquiry-menubutton:hover {
+    background-color: var(--BalanceInquieryMenuButtonHover-BgColor);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .balanceinquiry {
+        width: 280px;
+        min-height: 220px;
+        padding: 1.5rem;
+    }
+
+    .balanceinquiry-currentbalance {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .balanceinquiry-body {
+        font-size: 1rem;
+    }
+
+    .balanceinquiry-menubutton {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .balanceinquiry {
+        width: 90%;
+        min-height: 200px;
+        padding: 1rem;
+    }
+
+    .balanceinquiry-currentbalance {
+        font-size: 1.5rem;
+    }
+
+    .balanceinquiry-body {
+        font-size: 0.9rem;
+    }
+
+    .balanceinquiry-menubutton {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+    }
+}

@@ -1,0 +1,93 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background-color: #E7F2EF;
+    }
+
+
+
+    #root {
+        /* Login Screen */
+        --Login-bgColor: #ffffff;
+        --Login-TextColor: #1a1a40;
+        --Login-ShadowColor: rgba(0, 0, 0, 0.1);
+        --Login-WelcomeColor: #007bff;
+        --LoginInput-BorderColor: #1a1a40;
+        --LoginInput-BgColor: #fdfdfd;
+        --LoginInput-TextColor: #1a1a40;
+        --LoginInput-ShadowColor: rgba(0, 0, 0, 0.15);
+        --LoginInputFocus-BorderColor: #007bff;
+        --LoginInputFocus-ShadowColor: rgba(0, 123, 255, 0.4);
+        --LoginInputFocus-InsetShadowColor: rgba(0, 123, 255, 0.2);
+        --LoginButton-GradientColor1: #007bff;
+        --LoginButton-GradientColor2: #0056b3;
+        --LoginButton-TextColor: #fff;
+
+
+        /* MainMenu Screen */
+        --MainMenuHeading-TextColor: #1a1a40;
+        --MainMenuCard-BgColor: #ffffff;
+        --MainMenuCard-ShadowColor: rgba(0, 0, 0, 0.08);
+        --MainMenuCardHover-ShadowColor: rgba(0, 123, 255, 0.25);
+        --MainMenuCard-IconColor: #007bff;
+        --MainMenuCard-ContentColor: #1a1a40;
+
+        /* Balance Inquiry  */
+        --BalanceInquiry-BgColor: #ffffff;
+        --BalanceInquiry-ShadowColor: rgba(0, 0, 0, 0.15);
+        --BalanceInquiry-TextColor: #333333;
+        --BalanceInquiryCurrentBalance-TextColor: #28a745;
+        --BalanceInquiryMenuButton-TextColor: #ffffff;
+        --BalanceInquieryMenuButton-BgColor: #007bff;
+        --BalanceInquieryMenuButtonHover-BgColor: #0056b3;
+
+        /* Cash With Drawl  */
+        --CashWithDrawlBody-BgColor: #fff;
+        --CashWithDrawlShadowColor: rgba(0, 0, 0, 0.15);
+        --CashWithDrawlHeading-TextColor: #007bff;
+        --CashWithDrawlInput-BorderColor: #007bff;
+        --CashWithDrawlButton-TextColor: #fff;
+        --CashWithDrawlWithdrawButton-BgColor: #28a745;
+        --CashWithDrawlWithdrawButtonHover-BgColor: #218838;
+        --CashWithDrawlMenuButton-BgColor: #007bff;
+        --CashWithDrawlMenuButtonHover-BgColor: #0056b3;
+
+
+        /* Pin Change  */
+        --PinChange-BgColor: #ffffff;
+        --PinChnage-ShadowColor: rgba(0, 0, 0, 0.1);
+        --PinChangeh2-TextColor: #2c3e50;
+        --PinChangelabel-TextColor: #34495e;
+        --PinChangeInput-borderColor: #bdc3c7;
+        --PinChnageInputFocus-borderColor: #3498db;
+        --PinChangeButton-TextColor: #ffffff;
+        --PinChangeButton-BgColor: #28a745;
+        --PinChangeButtonHover-BgColor: #218838;
+        --PinChangeBackButton-BgColor: #007bff;
+        --PinChangeBackButtonHover-BgColor: #0056b3;
+
+        /* Mini Statement */
+        --MiniStatement-Gradient1: #fdfbfb;
+        --MiniStatement-Gradient2: #ebedee;
+        --MiniStatement-heading: #2c3e50;
+        --MiniStatementCard-BdColor: #ffffff;
+        --MiniStatementCard-ShadowColor: rgba(0, 0, 0, 0.05);
+        --MiniStatementCardHover-ShadowColor: rgba(0, 0, 0, 0.1);
+        --MiniStatementDate-TextColor: #7f8c8d;
+        --MiniStatementNegtiveAmount-TextColor: #e74c3c;
+        --MiniStatementPositiveAmount-TextColor: #27ae60;
+        --MiniStatementDescription-TextColor: #34495e;
+        --MiniStatementEmpty-TextColor: #7f8c8d;
+        --MiniStatementButton-BgColor: #3498db;
+        --MiniStatementButton-TextColor: white;
+        --MiniStatementButtonHover-BgColor: #2980b9;
+
+
+
+
+    }

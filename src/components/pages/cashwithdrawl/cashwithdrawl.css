@@ -1,0 +1,201 @@
+.cashwithdrawl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--CashWithDrawlBody-BgColor);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px var(--CashWithDrawlShadowColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.cashwithdrawl.active {
+    opacity: 0.3;
+}
+
+.cashwithdrawl-heading {
+    font-size: 2rem;
+    color: var(--CashWithDrawlHeading-TextColor);
+    margin-bottom: 1.5rem;
+}
+
+.cashwithdrawl-input {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--CashWithDrawlInput-BorderColor);
+    outline: none;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.cashwithdrawl-withdrawbutton,
+.cashwithdrawl-menubutton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    color: var(--CashWithDrawlButton-TextColor);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.8rem;
+    width: 100%;
+}
+
+.cashwithdrawl-withdrawbutton {
+    background-color: var(--CashWithDrawlWithdrawButton-BgColor);
+}
+
+.cashwithdrawl-withdrawbutton:hover {
+    background-color: var(--CashWithDrawlWithdrawButtonHover-BgColor);
+}
+
+.cashwithdrawl-menubutton {
+    background-color: var(--CashWithDrawlMenuButton-BgColor);
+}
+
+.cashwithdrawl-menubutton:hover {
+    background-color: var(--CashWithDrawlMenuButtonHover-BgColor);
+}
+
+.cashwithdrawl-dialog {
+    height: 35vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -60%) scale(0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+}
+
+.cashwithdrawl-dialog.active {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cashwithdrawldialogbutton-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cashwithdrawldialog-button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.CashWithDrawlDialog-Button:hover {
+    transform: translateY(-2px);
+}
+
+.confirm {
+    background-color: red;
+}
+
+.confirm:hover {
+    background-color: rgb(228, 44, 44);
+}
+
+.reject {
+    background-color: green;
+}
+
+.reject:hover {
+    background-color: rgb(48, 122, 48);
+}
+
+.cashwithdrawldialog-heading {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 768px) {
+    .cashwithdrawl {
+        padding: 1.5rem;
+        max-width: 320px;
+    }
+
+    .cashwithdrawl-heading {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .cashwithdrawl-input {
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .cashwithdrawl-withdrawbutton,
+    .cashwithdrawl-menubutton {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .cashwithdrawl-dialog {
+        width: 60%;
+        height: 30vh;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cashwithdrawl {
+        width: 90%;
+        padding: 1rem;
+        max-width: 280px;
+    }
+
+    .cashwithdrawl-heading {
+        font-size: 1.4rem;
+    }
+
+    .cashwithdrawl-input {
+        font-size: 0.9rem;
+    }
+
+    .cashwithdrawl-withdrawbutton,
+    .cashwithdrawl-menubutton {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .cashwithdrawl-dialog {
+        width: 80%;
+        height: 35vh;
+    }
+
+    .cashwithdrawldialog-button {
+        width: 45%;
+        font-size: 0.9rem;
+    }
+}

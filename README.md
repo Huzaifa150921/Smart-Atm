@@ -22,7 +22,9 @@ Smart ATM is a secure web application built with **React** and **TypeScript** th
 - **State Management:** React Context API  
 - **Bundler:** Vite  
 - **Styling & UI:** CSS3
-  
+---
+
+## 🌐 Live Demo
 
 ---
 

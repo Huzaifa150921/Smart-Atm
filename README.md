@@ -25,6 +25,6 @@ Smart ATM is a secure web application built with **React** and **TypeScript** th
 ---
 
 ## 🌐 Live Demo
-
+https://smartatm1232.netlify.app
 ---
 
